@@ -1,0 +1,242 @@
+@import url(https://fonts.google.com/specimen/Josefin+Sans);
+
+:root {
+    --desaturated-red: hsl(0, 36%, 70%);
+    --soft-red: hsl(0, 93%, 68%);
+    --dark-greyish-red: hsl(0, 6%, 24%);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Josefin Sans" sans-serif;
+    line-height: 1.5;
+    color: var(--desaturated-red);
+    letter-spacing: 5px;
+}
+
+main {
+    margin: auto;
+    min-width: 1170px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    background: url(./images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    /* justify-content: center; */
+
+}
+
+.left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 1rem 6rem;
+}
+
+img.logo {
+    padding-left: 10%;
+    width: 13rem;
+
+}
+
+article {
+    margin-top: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 4rem;
+}
+
+
+.title-red {
+    font-size: 4.5rem;
+    color: var(--desaturated-red);
+    font-weight: bold;
+    letter-spacing: 0.8rem;
+    line-height: 0.8;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.title-dark {
+    font-size: 4.5rem;
+    color: var(--dark-greyish-red);
+    font-weight: 800;
+    margin-bottom: 30px;
+    line-height: 1;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.text {
+    text-align: left;
+    font-size: 0.6rem;
+    color: var(--soft-red);
+    margin-bottom: 30px;
+    line-height: 2;
+    font-weight: 800;
+}
+
+.input {
+    display: flex;
+}
+
+input {
+    height: 60px;
+    width: 26rem;
+    padding: 1rem;
+    border: 1px solid var(--desaturated-red);
+    border-radius: 25px;
+    background: transparent;
+}
+
+input:hover,
+input:active {
+    border: 3px solid var(--desaturated-red);
+}
+
+.btn {
+    height: 60px;
+    width: 6rem;
+    margin-left: -14%;
+    border: 1px solid var(--soft-red);
+    font-size: 1.5rem;
+    color: #fff;
+    background: var(--soft-red);
+    border-radius: 40px;
+    box-shadow: 2px 2px 19px 2px var(--desaturated-red);
+}
+
+
+.btn:hover,
+.btn:focus {
+    margin-top: 5px;
+    background: #F5D2D3
+}
+
+.right {
+    width: 45%;
+    height: 80%;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+
+@media(max-width: 900px) {
+    main {
+        display: flex;
+        margin: auto;
+        flex-direction: column-reverse;
+        height: 100vh;
+        max-width: 375px;
+        width: 90%;
+        background: #FFF3F3;
+        padding: 10px;
+    }
+
+    .left {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .right-hero {
+        margin-top: 10rem;
+        content: url("./images/hero-mobile.jpg");
+        width: 100%;
+
+    }
+
+    .logo {
+        width: 100%;
+        margin-top: -95%;
+        height: 30px;
+        padding: 10px;
+
+    }
+
+    img.logo {
+        width: 40%;
+        height: 10%;
+    }
+
+    article {
+        margin-top: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 4rem 2rem;
+    }
+
+    .title-red {
+        font-size: 2.7rem;
+        color: var(--desaturated-red);
+        font-weight: bold;
+        letter-spacing: 0.8rem;
+        line-height: 0.8;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .title-dark {
+        font-size: 2.7rem;
+        color: var(--dark-greyish-red);
+        font-weight: 800;
+        margin-bottom: 30px;
+        line-height: 1;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .text {
+        text-align: center;
+        font-size: 0.5rem;
+        color: var(--soft-red);
+        margin-bottom: 30px;
+        line-height: 2;
+    }
+
+    input {
+        margin: auto;
+        height: 50px;
+        width: 18rem;
+        padding: 1rem;
+        border: 1px solid var(--desaturated-red);
+        border-radius: 25px;
+        background: transparent;
+    }
+
+    input:hover,
+    input:active {
+        border: 3px solid var(--desaturated-red);
+    }
+
+    .btn {
+        height: 50px;
+        width: 4rem;
+        margin-left: -14%;
+        border: 1px solid var(--soft-red);
+        font-size: 1.5rem;
+        color: #fff;
+        background: var(--soft-red);
+        border-radius: 40px;
+        box-shadow: 2px 2px 19px 2px var(--desaturated-red);
+    }
+
+    footer {
+        align-items: center;
+        margin: auto;
+        padding: 10px;
+    }
+}
